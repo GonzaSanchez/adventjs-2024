@@ -13,7 +13,7 @@ function prepareGifts(gifts: number[]): number[] {
   // Code here
   const dedupedGifts = new Set(gifts);
 
-  return [...dedupedGifts].sort((giftA, giftB) => (giftA < giftB ? -1 : 1));
+  return [...dedupedGifts].sort((giftA, giftB) => giftA - giftB);
 }
 
 // test
