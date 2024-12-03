@@ -13,11 +13,9 @@
 function createFrame(names: string[]): string {
   // Code here
   let maxNameLength = 0;
-  let rows = 0;
   let cols = 0;
 
   names.forEach((name) => {
-    rows++;
     maxNameLength = Math.max(maxNameLength, name.length);
   });
 
